@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>accordion</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .numbers {
+        color: #ced4da;
+      }
+      .second-one .accordion-title,
+      .second-one .numbers {
+        color: #099268;
+      }
+      .second-one {
+        border-top: #099268 solid 5px;
+      }
+      .accordion-title,
+      .numbers {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .accor {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        justify-content: center;
+      }
+      .arrows {
+        height: 20px;
+        width: auto;
+
+        stroke: #099268;
+      }
+      .hidden-box p {
+        margin-bottom: 24px;
+        line-height: 23px;
+      }
+      .hidden-box {
+        grid-column: 2;
+      }
+      .hidden-box ul {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: #868e96;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accor first-one">
+        <p class="numbers">01</p>
+        <p class="accordion-title">where are these chairs assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="arrows"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </div>
+      <div class="accor second-one">
+        <p class="numbers">02</p>
+        <p class="accordion-title">how long do i have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="arrows"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vitae
+            excepturi atque cupiditate, dolore ipsa debitis vel, ullam eum aut
+            nesciunt temporibus distinctio optio nihil similique eligendi
+            reiciendis labore doloribus!
+          </p>
+          <ul>
+            <li>sunt voluptas dolores error saepe. Itaque recusandae</li>
+            <li>doloribus expedita ut eaque animi tempora aspernatur.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>aliquidFacilis neque minus rem inventore officia veritatis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accor third-one">
+        <p class="numbers">03</p>
+        <p class="accordion-title">do you ship to contries outside the EU</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="arrows"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
